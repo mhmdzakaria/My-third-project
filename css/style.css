@@ -1,0 +1,399 @@
+/*------------- (1)Start general -------------*/
+
+*
+{
+	margin: 0;
+	padding: 0;
+}
+
+
+/*------------- End general -------------*/
+
+
+/*------------- (2)Start body -------------*/
+
+body
+{
+	height: ;
+	font-family: 'Lato', sans-serif;
+}
+
+
+/*------------- End body -------------*/
+
+/*------------- (3)Start Navbar -------------*/
+
+#navbar
+{
+	color: white;
+	
+}
+.navbar
+{
+	padding: 0 20px !important;
+	background: #141D26;
+	font-size: 20px;
+	
+
+}
+.navbar-brand
+{
+	font-size: 30px;
+	position: absolute;
+	left: 50%;
+	top: 30px;
+	text-transform: uppercase;
+	font-weight: 600;
+	color: white !important;
+	
+}
+
+
+.navbar a
+{
+	color: white !important;
+	margin-right: 20px !important;
+}
+.navbar .right-menu
+{
+	
+	float: right;
+}
+.navbar .left-menu
+{
+	float: left;
+}
+.right-menu li
+{
+	display: inline-block;
+	margin-top: 30px;
+	
+}
+.right-menu .fab
+{
+	font-size: 25px;
+	margin-right: 20px;
+	cursor: pointer;
+	color: white;
+}
+
+.right-menu .fab:hover
+{
+	transform: scale(1.8,1.8);
+	transition: all .5s ease-in-out;
+	
+}
+
+.navbar-toggler
+{
+	border: none !important;
+	outline: none !important;
+	padding: 0 !important;
+	margin: 30px 0;
+	float: right !important;
+	color: white !important;
+}
+
+/*------------- End Navbar -------------*/
+
+/*------------- (4)Start banner -------------*/
+
+#banner
+{
+	position: relative;
+	margin: 50px auto;
+}
+
+#banner img
+{
+	margin-left: 50px;
+    width: 100%;
+}
+
+#banner .text
+{
+	position: absolute;
+	left: 37%;
+    top: 28%;
+}
+
+#banner .text h1, h2
+{
+	color: white;
+	background: rgba(0,0,0,.75);
+	padding: 0 10px;	
+		
+}
+
+/*------------- End banner -------------*/
+
+/*------------- (5)Start services -------------*/
+
+.services
+{
+	margin: 100px auto;
+
+}
+
+.first-box h1
+{
+	padding: 40px 0;
+	color: #141D26;
+	text-transform: uppercase;
+	font-size: 35px;
+	color: white;
+}
+
+.first-box p
+{
+	font-size: 20px;
+	font-weight: 400;
+	margin-bottom: 60px;
+	text-transform: capitalize;
+}
+
+.title
+{
+	height: 120px;
+	width: 80%;
+	max-width: 700px;
+	background: #141D26;
+	position: relative;
+	margin: 80px auto;
+}
+
+.title::after
+{
+	position: absolute;
+	content: '';
+	height: 120px;
+	width: 400px;
+	background: #2EC4B6;
+	top: 0px;
+	left: -50px;
+	z-index: -1;
+}
+
+.title::before
+{
+	position: absolute;
+	content: '';
+	height: 120px;
+	width: 400px;
+	background: #E71D36;
+	bottom: -0px;
+	right: -50px;
+	z-index: -1;
+}
+
+.second-box
+{
+	position: relative;
+	margin-bottom: 15px;
+
+}
+
+.btn-subscribe
+{
+	width: 150px;
+	padding: 10px 0;
+	outline: none;
+	border: 0;
+	border-radius: 2px;;
+	position: absolute;
+	background: #35CE8D;
+	left: 50%;
+	bottom: 0;
+	opacity: 0;
+	transform: translate(-50%,0);
+	transition: all .4s ease-in-out;
+	color: white;
+
+}
+.overlay
+{
+	
+	height: 100%;
+	width: 100%;
+	background: #141D26;
+	position: absolute;
+	top: 0;
+	opacity: .8;
+	transition: all .4s ease-in-out;
+
+}
+
+.second-box:hover .btn-subscribe
+{
+	transform: translate(-50%,50%);
+	transition: all .4s ease-in-out;
+	bottom: 50%;
+	opacity: 1;
+	font-weight: bold;
+
+}
+
+
+.second-box:hover .overlay
+{
+	opacity: 0;
+	cursor: pointer;
+
+}
+
+/*------------- End services -------------*/
+
+/*------------- (6)Start about-us  -------------*/
+
+
+.about-us  
+{
+	background-image: url(../images/pic2.jpg);
+	background-size: cover;
+	background-position: center;
+	color: white;
+	position: relative;
+
+}
+
+.about-us  img
+{
+	position: absolute;
+	bottom: -80px;
+	left: -10px;
+}
+
+.about-us  img:hover
+{
+	transform: scale(1.05,1.05);
+	transition: all 1s ease-in-out;
+
+}
+
+
+.subscribe
+{
+	max-width: 500px;
+	margin-top: 30px;
+	padding: 60px;
+	background: #334042;
+	margin-bottom: 20px;
+	margin-left: 70px;
+}
+
+.subscribe:hover
+{
+	background: #161B1D;
+	transform: scale(1.05,1.05);
+	transition: all 1s ease-in-out;
+
+}
+
+/*------------- End about-us  -------------*/
+
+/*------------- (7)Start testimonials -------------*/
+
+#testimonials
+{
+	margin-top: 200px;
+	margin-bottom: 80px;
+}
+#testimonials h1
+{
+	margin-bottom: 60px;
+	text-transform: uppercase;
+	color: white;
+	background: rgba(0,0,0,.75);
+	padding: 0px 10px;
+	width: 80%;
+	margin-left: 20%;
+}
+#testimonials h2
+{
+	margin-bottom: 40px;
+	color: white;
+	background: rgba(0,0,0,.75);
+}
+
+#testimonials .part-one
+{
+	padding: 20px;
+}
+#testimonials img:hover
+{
+	transform: scale(1.1,1.1);
+transition: all 1s ease-in-out;
+
+}
+
+/*------------- End testimonials -------------*/
+
+/*------------- (8)Start testimonials 2 -------------*/
+
+#testimonials2
+{
+	margin-bottom: 80px;
+}
+#testimonials2 h1
+{
+	margin-bottom: 60px;
+	text-transform: uppercase;
+	color: white;
+	background: rgba(0,0,0,.75);
+	padding: 0px 10px;
+	width: 80%;
+	margin-right: 20%;
+}
+#testimonials2 h2
+{
+	margin-bottom: 40px;
+	color: white;
+	background: rgba(0,0,0,.75);
+}
+#testimonials2 img:hover
+{
+	transform: scale(1.1,1.1);
+	transition: all 1s ease-in-out;
+
+}
+
+/*------------- End testimonials 2 -------------*/
+
+/*------------- (9)Start footer -------------*/
+
+#footer
+{
+	background: #141D26;
+	padding: 40px 0;
+	color: white;
+}
+#footer p
+{
+	line-height: 2em;
+	text-transform: capitalize;
+}
+#footer h3
+{
+	
+}
+#footer input
+{
+padding: 20px;
+}
+#footer span
+{
+	background: #1D1D29; 
+	color: white;
+}
+#footer .fab
+{
+	margin-right: 20px;
+}
+#footer .fab:hover
+{
+	cursor: pointer;
+	transform: scale(1.2,1.2);
+	transition: .5s;
+}
+
+/*------------- End footer -------------*/
